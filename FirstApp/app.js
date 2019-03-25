@@ -5,3 +5,11 @@ fs.readFile('README.txt', 'utf8', function(err, data) {
 });
 
 console.log('This happened !');
+
+if (!fs.existsSync('Example')) {
+    fs.mkdirSync('Example');
+};
+
+if (fs.existsSync('Example')) {
+    fs.rmdirSync('Example');
+};
