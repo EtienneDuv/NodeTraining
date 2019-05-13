@@ -1,0 +1,11 @@
+<body>
+    <% include partials/head.ejs %>
+
+    <h1>Profile page of #<%= id %>, who is a <%= data.status %></h1>
+    <h2>Hobbies</h2>
+    <ul>
+        <% data.activities.forEach(function(item){ %>
+            <li><%= item %></li>
+        <% }) %>
+    </ul>
+</body>
