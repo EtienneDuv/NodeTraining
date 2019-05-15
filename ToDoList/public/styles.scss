@@ -1,0 +1,64 @@
+body {
+  background: #0d1521;
+  font-family: tahoma;
+
+  .todo-table {
+    background: lightslategrey;
+    margin: 0 auto;
+    padding: 1em 4em;
+  }
+
+  .row {
+    padding-top: 0.7em;
+  }
+
+  input[type="text"] {
+    padding: 0.5em;
+    background: #181c22;
+    border: 0;
+    float: left;
+    font-size: 20px;
+    color: #989898;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0.7em 0;
+    margin: 0;
+    li {
+      color: #181c22;
+      width: 80%;
+      padding: 0.7em;
+      box-sizing: border-box;
+      font-family: arial;
+      font-size: 20px;
+      cursor: pointer;
+      letter-spacing: 1px;
+      &:hover {
+        text-decoration: line-through;
+        background: rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
+
+  .header-div {
+    height: 67px;
+    display: block;
+    text-align: -webkit-center;
+    img {
+      height: 140px;
+      width: auto;
+      overflow: hidden;
+      transform: scaleY(-1);
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  button{
+    &[type="submit"]{
+      margin-top: 1em;
+      box-sizing: content-box;
+    }
+  }
+}

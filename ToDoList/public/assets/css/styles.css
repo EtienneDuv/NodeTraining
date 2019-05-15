@@ -1,0 +1,69 @@
+body {
+  background: #0d1521;
+  font-family: tahoma;
+}
+
+body .todo-table {
+  background: lightslategrey;
+  margin: 0 auto;
+  padding: 1em 4em;
+}
+
+body .row {
+  padding-top: 0.7em;
+}
+
+body input[type="text"] {
+  padding: 0.5em;
+  background: #181c22;
+  border: 0;
+  float: left;
+  font-size: 20px;
+  color: #989898;
+}
+
+body ul {
+  list-style-type: none;
+  padding: 0.7em 0;
+  margin: 0;
+}
+
+body ul li {
+  color: #181c22;
+  width: 80%;
+  padding: 0.7em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: arial;
+  font-size: 20px;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+body ul li:hover {
+  text-decoration: line-through;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+body .header-div {
+  height: 67px;
+  display: block;
+  text-align: -webkit-center;
+}
+
+body .header-div img {
+  height: 140px;
+  width: auto;
+  overflow: hidden;
+  -webkit-transform: scaleY(-1);
+          transform: scaleY(-1);
+}
+
+@media (max-width: 576px) {
+  button[type="submit"] {
+    margin-top: 1em;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

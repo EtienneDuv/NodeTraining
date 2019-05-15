@@ -19,3 +19,5 @@ bin-release/
 # information for Eclipse / Flash Builder.
 
 FirstApp/node_modules/*
+ToDoList/node_modules/*
+Practice/*
