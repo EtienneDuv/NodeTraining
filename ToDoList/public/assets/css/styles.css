@@ -3,17 +3,17 @@ body {
   font-family: tahoma;
 }
 
-body .todo-table {
+.todo-table {
   background: lightslategrey;
   margin: 0 auto;
   padding: 1em 4em;
 }
 
-body .row {
+.row {
   padding-top: 0.7em;
 }
 
-body input[type="text"] {
+input[type="text"] {
   padding: 0.5em;
   background: #181c22;
   border: 0;
@@ -22,13 +22,13 @@ body input[type="text"] {
   color: #989898;
 }
 
-body ul {
+ul {
   list-style-type: none;
   padding: 0.7em 0;
   margin: 0;
 }
 
-body ul li {
+ul li {
   color: #181c22;
   width: 80%;
   padding: 0.7em;
@@ -40,23 +40,22 @@ body ul li {
   letter-spacing: 1px;
 }
 
-body ul li:hover {
+ul li:hover {
   text-decoration: line-through;
   background: rgba(0, 0, 0, 0.2);
 }
 
-body .header-div {
+.header-div {
   height: 67px;
+  margin-top: 1em;
   display: block;
   text-align: -webkit-center;
 }
 
-body .header-div img {
+.header-div img {
   height: 140px;
   width: auto;
   overflow: hidden;
-  -webkit-transform: scaleY(-1);
-          transform: scaleY(-1);
 }
 
 @media (max-width: 576px) {
