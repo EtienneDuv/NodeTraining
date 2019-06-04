@@ -1,15 +1,20 @@
-module.exports = {
-    xhr: xhr,
-};
-
 var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
-var xhr = new XMLHttpRequest();
 
-xhr.onreadystatechange = function() {
-    // console.log("readyState = " + this.readyState + ", status = " + this.status);
-    // if (this.readyState == 4 && this.status == 200) {
-    //     var result = this.responseText;
-    //     console.log(result);
-    // }
-};
 
+module.exports = {
+     submitAjax : function () {
+        xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = (function () {
+            return callback(xhr);
+        });
+        if (method && method.toUpperCase() == 'POST') {
+            xhr.open(method, url, true);
+            xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+            xhr.setRequestHeader("X-Requested-With", "XMLHttpRequest");
+            xhr.send(data);
+        } else {
+            xhr.open(method, url);
+            xhr.send();
+        }
+    }
+}
