@@ -1,24 +1,3 @@
 body {
-  background: #0d1521;
-  font-family: tahoma;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0.7em 0;
-  margin: 0;
-  li {
-    color: #181c22;
-    width: 80%;
-    padding: 0.7em;
-    box-sizing: border-box;
-    font-family: arial;
-    font-size: 20px;
-    cursor: pointer;
-    letter-spacing: 1px;
-    &:hover {
-      text-decoration: line-through;
-      background: rgba(0, 0, 0, 0.2);
-    }
-  }
+  background: #063986;
 }
