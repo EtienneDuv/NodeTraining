@@ -1,0 +1,28 @@
+body {
+  background: #0d1521;
+  font-family: tahoma;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0.7em 0;
+  margin: 0;
+}
+
+ul li {
+  color: #181c22;
+  width: 80%;
+  padding: 0.7em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: arial;
+  font-size: 20px;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+ul li:hover {
+  text-decoration: line-through;
+  background: rgba(0, 0, 0, 0.2);
+}
+/*# sourceMappingURL=styles.css.map */
