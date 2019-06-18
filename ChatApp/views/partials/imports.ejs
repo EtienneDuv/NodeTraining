@@ -1,5 +1,8 @@
 <script src="/socket.io/socket.io.js"></script>
 <script src="/assets/js/index.js"></script>
 <script>
-  var socket = io();
+  const userId = prompt("Please enter your name:");
+  var socket = io({
+    userId : userId
+  });
 </script>

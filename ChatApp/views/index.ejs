@@ -1,13 +1,10 @@
 <% include partials/head.ejs %>
 
-
 <body>
-<div class="col-sm-12 messages">
-    
-</div>
+<div class="col-sm-12 messages" id="messages"></div>
 <div class="col-sm-12 formDiv">
     <form id="chatForm" class="row" method="post" >
-        <input  class="col-sm-9 offset-sm-1" type="text" name="message" id="message" placeholder="Write a message !" autocomplete="off" required>
+        <input  class="col-sm-9 offset-sm-1" type="text" name="message" id="message" placeholder="Write a message !" autocomplete="off" maxlength="120" required>
         <button class="col-sm-1 / btn btn-primary btn-submit" type="submit">Send</button>
     </form>
 </div>

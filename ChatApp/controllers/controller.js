@@ -1,6 +1,9 @@
+var messages = [],
+    date = new Date()
 module.exports = function(app, io){
     app.get("/", (req, res) => {
-        res.render("index");
+        console.log('messages: ', messages)
+        res.render("index", { messages: messages });
     });
     
     app.post("/", (req, res) => {
@@ -11,11 +14,12 @@ module.exports = function(app, io){
     //SOCKET observer
     io.on('connection', function (socket) {
         console.log('User connected');
+        socket.broadcast.emit("New user joined")
         socket.on('disconnect', function () {
             console.log('User disconnected');
         });
         socket.on("chat_message", function(message){
-            console.log("New message :", message);
+            messages.push({'time': date.getTime(), 'message': message });
         });
     });
 }
