@@ -18,7 +18,5 @@ bin-release/
 # should NOT be excluded as they contain compiler settings and other important
 # information for Eclipse / Flash Builder.
 
-FirstApp/node_modules/*
-ToDoList/node_modules/*
-AppBase/node_modules/*
+*/node_modules/*
 Practice/*
